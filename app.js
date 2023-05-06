@@ -37,9 +37,7 @@ addTask.addEventListener("click", function () {
     checkButton.parentElement.classList.toggle("line-through");
   });
 
-  deleteButton.addEventListener("click", function (e) {
-    let target = e.target;
-    console.log(target.parentElement.parentElement);
-    target.parentElement.parentElement.remove();
+  deleteButton.addEventListener("click", function () {
+    task.remove();
   });
 });
